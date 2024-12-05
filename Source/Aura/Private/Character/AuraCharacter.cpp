@@ -4,6 +4,9 @@
 #include "Character/AuraCharacter.h"
 
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Player/AuraPlayerController.h"
+#include "Player/AuraPlayerState.h"
+#include "UI/HUD/AuraHUD.h"
 
 AAuraCharacter::AAuraCharacter()
 {
@@ -15,4 +18,41 @@ AAuraCharacter::AAuraCharacter()
 	bUseControllerRotationRoll = false;
 	bUseControllerRotationYaw = false;
 }
+
+void AAuraCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	// Init ability actor info for the server
+	InitAbilityActorInfo();
+}
+
+void AAuraCharacter::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+	// Init ability actor info for the client
+	InitAbilityActorInfo();
+}
+
+void AAuraCharacter::InitAbilityActorInfo()
+{
+	AAuraPlayerState* AuraPlayerState = GetPlayerState<AAuraPlayerState>();
+	check(AuraPlayerState);
+	AbilitySystemComponent =  AuraPlayerState->GetAbilitySystemComponent();
+	AbilitySystemComponent->InitAbilityActorInfo(AuraPlayerState, this);
+
+	AttributeSet = AuraPlayerState->GetAttributeSet();
+
+	//This is the place we place an if check and not an assert as in the client all three player controllers are not present
+	if (AAuraPlayerController* AuraPlayerController =  Cast<AAuraPlayerController>(GetController()))
+	{
+		AAuraHUD* AuraHUD = Cast<AAuraHUD>(AuraPlayerController->GetHUD());
+		if (AuraHUD)
+		{
+			AuraHUD->InitOverlay(AuraPlayerController, AuraPlayerState, AbilitySystemComponent, AttributeSet);
+		}
+	}
+	
+}
+
 

@@ -9,15 +9,17 @@
   <component name="ChangeListManager">
     <list default="true" id="66c78fa7-8cdb-48b3-9eaa-f00a70e463ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Slingshot/BP_Goblin_Slingshot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Slingshot/BP_Goblin_Slingshot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Spear/BP_Goblin_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Spear/BP_Goblin_Spear.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aura.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Aura.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Game/BP_GameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Game/BP_GameModeBase.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Aura.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Aura.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Aura.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Aura.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraCharacterBase.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraEnemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraEnemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Aura/Private/Player/AuraPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/Player/AuraPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraCharacterBase.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraEnemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraEnemy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Public/Player/AuraPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Public/Player/AuraPlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +32,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Source/Aura/Private/UI/WidgetController/AuraWidgetController.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Aura/Public/UI/WidgetController/AuraWidgetController.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -39,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Uproject.Aura.executor": "Run",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Uproject.Aura.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Aura" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -137,7 +143,18 @@
       <option name="presentableId" value="Default" />
       <updated>1731836622794</updated>
       <workItem from="1731836624018" duration="77000" />
-      <workItem from="1731836845421" duration="5247000" />
+      <workItem from="1731836845421" duration="5365000" />
+      <workItem from="1731898202341" duration="10529000" />
+      <workItem from="1731936627360" duration="3832000" />
+      <workItem from="1731984815695" duration="6766000" />
+      <workItem from="1732078782777" duration="8495000" />
+      <workItem from="1732106203894" duration="5762000" />
+      <workItem from="1732167684769" duration="9949000" />
+      <workItem from="1732252941438" duration="1577000" />
+      <workItem from="1732258433940" duration="7716000" />
+      <workItem from="1732344430094" duration="2198000" />
+      <workItem from="1732378601488" duration="4956000" />
+      <workItem from="1732426660501" duration="1669000" />
     </task>
     <servers />
   </component>
