@@ -46,3 +46,5 @@ This project is a multiplayer top-down RPG developed in Unreal Engine 5, utilizi
 * C++ / Blueprints 
 * Gameplay Ability System (GAS)
 * Behavior Trees & EQS (AI System)
+
+### [Development Video](https://drive.google.com/file/d/1rxgYeGszqsYqvKvPAglwGX3K4M0Tx-Cb/view?usp=sharing)
