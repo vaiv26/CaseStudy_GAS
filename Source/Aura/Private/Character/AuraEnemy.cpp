@@ -31,12 +31,12 @@ AAuraEnemy::AAuraEnemy()
 
 void AAuraEnemy::PossessedBy(AController* NewController)
 {
-	Super::PossessedBy(NewController);
+	/*Super::PossessedBy(NewController);
 	if (!HasAuthority()) return;
 	AuraAIController = Cast<AAuraAIController>(NewController);
 
 	AuraAIController->GetBlackboardComponent()->InitializeBlackboard(*BehaviorTree->BlackboardAsset);
-	AuraAIController->RunBehaviorTree(BehaviorTree);
+	AuraAIController->RunBehaviorTree(BehaviorTree);*/
 }
 
 
@@ -53,8 +53,10 @@ void AAuraEnemy::BeginPlay()
 	};
 
 	const UAuraAttributeSet* AuraAS = Cast<UAuraAttributeSet>(AttributeSet);
+	UE_LOG(LogTemp,Warning,TEXT("This is Working before if statement"));
 	if (AuraAS)
 	{
+		UE_LOG(LogTemp,Warning,TEXT("This is Working inside if statement"));
 		AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AuraAS->GetHealthAttribute()).AddLambda(
 			[this](const FOnAttributeChangeData& Data)
 			{

@@ -93,6 +93,7 @@ void UExecCalc_Damage::Execute_Implementation(const FGameplayEffectCustomExecuti
 	const FRealCurve* EffectiveArmorCurve = CharacterClassInfo->DamageCalculationCoefficients->FindCurve(FName("EffectiveArmor"),FString());
 	const float EffectiveArmorCoeff = EffectiveArmorCurve->Eval(SourceCombatInterface->GetPlayerLevel());
 	
+	
 	//Armor ignores a percentage of incoming damage
 	const float EffectiveArmor = TargetArmor *= (100 - SourceArmorPenetration * ArmorPenetrationCoeff) / 100.0f;
 	Damage += (100 - EffectiveArmor * EffectiveArmorCoeff) / 100.0f;
